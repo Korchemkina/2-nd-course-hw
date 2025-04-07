@@ -4,89 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>minigame</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="top center">
-      <header>
-        <h1>Добро пожаловать<br />на мой сайт мини-игр</h1>
-        <p class="header__text">
-          Тебе предстоит пройти несколько увлекательных игр.<br />Если готов,
-          нажимай <b class="keywords">«Поехали!»</b> и
-          <b class="keywords">приступай.</b>
+    
+      <section class="header center">
+        <div class="header__container">
+        <h1 class="header__heading">Добро пожаловать на мой сайт мини-игр</h1>
+        <p class="header__text"> Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="header__text_bold">«Поехали!»</span> и <span class="header__text_bold">приступай.</span>
         </p>
-        <a href="#"><button class="header__button">Поехали!</button></a>
-        <!-- /*Анимированная полоса с названиями игр должна автоматически плавно прокручиваться влево.*/ -->
-      </header>
-    </div>
-    <section class="games-blok center">
-      <h2 class="games" id="#">Об играх</h2>
-      <svg
-        class="star1"
-        width="566.083008"
-        height="566.841614"
-        viewBox="0 0 566.083 566.842"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <desc>Created with Pixso.</desc>
-        <defs />
-        <path
-          id="Star 1"
-          d="M215.39 196.12L26.9 136.25L164.33 278.47L0 388.52L196.88 369.75L180.45 566.84L288.53 401.21L432.38 536.93L370.27 349.16L566.08 321.32L380.55 252.81L480.86 82.36L311.62 184.69L240.91 0L215.39 196.12ZM241.39 4.05L216.23 197.43L30.37 138.4L165.88 278.64L3.84 387.14L197.97 368.64L181.78 562.98L288.35 399.66L430.19 533.49L368.95 348.34L562.02 320.89L379.08 253.33L477.99 85.26L311.12 186.17L241.39 4.05Z"
-          fill="#BCEC30"
-          fill-opacity="1.000000"
-          fill-rule="evenodd"
-        />
-      </svg>
-
-      <p class="games__text">
-        В моей коллекции представлено 6 игр на разные темы. <br />
-        Игры несложные — в них может поиграть каждый. <br />
-        Все игры доступны для пользования.
-      </p>
-      <div class="games-img">
-        <a class="games-img__card" href="#">
-          <div class="games-img__item games-img__item_1">
-            <span class="games-img__number">Игра № 1</span>
-            <h3 class="games-img__text">Угадай число</h3>
-          </div>
-        </a>
-        <a class="games-img__card" href="#">
-          <div class="games-img__item games-img__item_2"></div>
-          <div class="games-img__number">Игра № 2</div>
-          <div class="games-img__text">Простая арифметика</div>
-        </a>
-        <a class="games-img__card" href="#">
-          <div class="games-img__item games-img__item_3"></div>
-          <div class="games-img__number">Игра № 3</div>
-          <div class="games-img__text">Переверни текст</div>
-        </a>
-        <a class="games-img__card" href="#">
-          <div class="games-img__item games-img__item_4"></div>
-          <div class="games-img__number">Игра № 4</div>
-          <div class="games-img__text">Камень, ножницы, бумага</div>
-        </a>
-        <a class="games-img__card" href="#">
-          <div class="games-img__item games-img__item_5"></div>
-          <div class="games-img__number">Игра № 5</div>
-          <div class="games-img__text">Простая викторина</div>
-        </a>
-        <a class="games-img__card" href="#">
-          <div class="games-img__item games-img__item_6"></div>
-          <div class="games-img__number">Игра № 6</div>
-          <div class="games-img__text">Генератор случайных цветов</div>
-        </a>
-      </div>
+        <a href="#aboutgames"><button class="header__button">Поехали!</button></a>
+        </div>
+      </section>
+      
+      <section class="scrollbar">
+        <div class="scrollbar__text">Викторина</div>
+        <svg class="scrollbar__star" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
+          </svg>
+        <div class="scrollbar__text">Угадай число</div>
+        <svg class="scrollbar__star" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
+          </svg>
+        <div class="scrollbar__text">Переверни текст</div>
+        <svg class="scrollbar__star" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
+          </svg>
+        <div class="scrollbar__text">Простая арифметика</div>
+        <svg class="scrollbar__star" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
+          </svg>
+        <div class="scrollbar__text">Камень, ножницы, бумага</div>
+        <svg class="scrollbar__star" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
+          </svg>
+        <div class="scrollbar__text">Генератор случайных цветов</div>
+        <svg class="scrollbar__star" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
+          </svg>
     </section>
 
-    <section></section>
+    <section class="games__container center">
+      <h2 class="games" id="aboutgames">Об играх</h2>
+      <p class="games__text">В моей коллекции представлено 6 игр на разные темы. <br>
+      Игры несложные — в них может поиграть каждый. <br>
+      Все игры доступны для пользования.</p>
+      <div class="game-cards">
+          <a class="game-card"  href="#">
+              <div class="game-card__image game-card__image_type_1"></div>
+              <div class="game-card__number">Игра № 1</div>
+              <div class="game-card__text">Угадай число</div>
+          </a>
+          <a class="game-card"  href="#">
+              <div class="game-card__image game-card__image_type_2"></div>
+              <div class="game-card__number">Игра № 2</div>
+              <div class="game-card__text">Простая арифметика</div>
+          </a>
+          <a class="game-card"  href="#">
+              <div class="game-card__image game-card__image_type_3"></div>
+              <div class="game-card__number">Игра № 3</div>
+              <div class="game-card__text">Переверни текст</div>
+          </a>
+          <a class="game-card game-card--top" href="#">
+              <div class="game-card__image game-card__image_type_4"></div>
+              <div class="game-card__number">Игра № 4</div>
+              <div class="game-card__text">Камень, ножницы, бумага</div>   
+          </a>
+          <a class="game-card"  href="#">
+              <div class="game-card__image game-card__image_type_5"></div>
+              <div class="game-card__number">Игра № 5</div>
+              <div class="game-card__text">Простая викторина</div>
+          </a>
+          <a class="game-card game-card--top" href="#">
+              <div class="game-card__image game-card__image_type_6"></div>
+              <div class="game-card__number">Игра № 6</div>
+              <div class="game-card__text">Генератор случайных цветов</div>
+          </a>
+      </div>
+  </section>
+
+    <section>
     <footer class="footer center">Все права защищены.</footer>
+  </section>
   </body>
 </html>

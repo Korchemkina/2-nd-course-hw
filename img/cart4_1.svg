@@ -1,0 +1,24 @@
+<svg width="247.074219" height="284.280640" viewBox="0 0 247.074 284.281" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_14_3949_dd" x="0.000000" y="0.000000" width="247.074219" height="284.280640" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feMorphology radius="-9.15954" in="" result="BackgroundImageFix"/>
+			<feOffset dx="0" dy="15.2659"/>
+			<feGaussianBlur stdDeviation="17.0469"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_14_3949_dd)">
+		<rect id="Frame 2043683065" rx="19.275000" width="138.632965" height="184.677322" transform="translate(71.331055 23.953918) rotate(9.999999)" fill="#FFC700" fill-opacity="1.000000"/>
+		<rect id="Frame 2043683065" rx="19.275000" width="138.632965" height="184.677322" transform="translate(71.331055 23.953918) rotate(9.999999)" stroke="#271A58" stroke-opacity="1.000000" stroke-width="0.500000"/>
+		<rect id="Frame 2043683065" rx="19.275000" width="138.632965" height="184.677322" transform="translate(71.331055 23.953918) rotate(9.999999)" stroke="#000000" stroke-opacity="0.200000" stroke-width="0.500000"/>
+	</g>
+	<path id="✊" d="" stroke="#271A58" stroke-opacity="1.000000" stroke-width="0.634167"/>
+</svg>

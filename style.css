@@ -1,38 +1,49 @@
 * {
-    padding: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
-
   body {
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
   }
   .center {
     padding-left: calc(50% - 720px);
     padding-right: calc(50% - 720px); 
   }
   
-    .top {
-        background: rgb(225, 255, 143);
-        height: 800px;   
-    }
+.header {
+    background: rgb(225, 255, 143);
+    height: 800px;   
+    background-image: url(img/heder-star/Star2.svg), url(img/heder-star/Star3.svg), url(img/heder-star/starbig.svg), url(img/heder-star/Star5.svg), url(img/heder-star/Star4.svg);
+    background-position: 63px 94px, 156px 69px, calc(170% - -334px), 948px 538px, 1013px 568px;
+    background-repeat: no-repeat;
+   
+}
+.header__container {
+    padding-left: 120px;
+    max-height: 358px;
+    max-width: 768px;
+    padding-top: 196px;
 
-h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+}
+.header__heading {
+    color: rgb(32, 32, 39);
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
-    padding-top: 196px;
+    text-align: left;
 }
 
 .header__text {
+    color: #202027;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
     padding-top: 24px;
     padding-bottom: 48px;
+    max-width: 720px;
+}
+.header__text_bold {
+    font-weight: 600;
 }
 .header__button {
     cursor: pointer;
@@ -50,6 +61,7 @@ h1 {
     height: 66px;
     font-size: 24px;
     font-weight: 600;
+    display: inline-block;
 }
 .header__button:hover {
     background: rgb(225, 255, 143);
@@ -58,42 +70,147 @@ h1 {
     border: 1px solid rgb(0, 0, 0);
 }
 
-.games-blok {
-    background: rgb(32, 32, 39);
+.scrollbar {
+    width: 3220px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 87px;
 }
-.games {
-    color: rgb(255, 255, 255);
-    font-size: 64px;
+.scrollbar__text {
+    font-family: "Montserrat";
+    color: rgb(32, 32, 39);
+    font-size: 30px;
     font-weight: 700;
-    line-height: 78px;
-}
-.games-img {
-    display: grid;
-    gap: 32px;
-   grid-template-columns: repeat(3, 1fr);
-    
-}
-.games__text {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-}
-.games-img__card {
-width: 378px;
-height: 159px;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-gap: 10;
-padding: 32px 32px 36px 32px;
-border-radius: 30px;
+    text-transform: uppercase;
+    padding-right: 51px;
+    padding-left: 51px;
 }
 
-.games-img__number {
+.games__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    background: #202027;
+    background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
+    background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
+    background-repeat: no-repeat;
+    padding-left: 120px;
+}
+
+
+.games {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 94px;
+}
+.games__text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+    max-width: 788px;
+}
+.game-card__number {
     color: rgb(32, 32, 39);
     font-size: 16px;
     font-weight: 500;
     line-height: 110%;
+    text-align: left;  
+}
+.game-card__text {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.game-cards {
+    max-height: 1060px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+    background-color: #FFFFFF ;
+    border-radius: 30px;
+}
+
+.game-card__image {
+    border-radius: 30px;
+    height: 314px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game-card--top {
+    margin-top: -40px;
+}
+
+.game-card__image_type_1 {
+    background: url(img/cart1.svg);
+    background-position: center;
+    
+}
+.game-card__image_type_2 {
+    background: url(img/cart2.svg);
+    background-position: center;
+
+}
+.game-card__image_type_3{
+    background: url(img/cart3.svg);
+    background-position: center;
+
+}
+.game-card__image_type_4{
+    background: url(img/cart4.svg);
+    background-image: url(img/cart4_1.svg);
+    background-position: center;
+
+}
+.game-card__image_type_5{
+    background: url(img/cart5.svg);
+    background-position: center;
+
+}
+.game-card__image_type_6{
+    background: url(img/cart6.svg);
+    background-position: center;
+
+}
+
+
+.footer {
+color: rgb(0, 0, 0);
+font-family: inherit;
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+text-align: center;
+background: rgb(189, 237, 53);
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
