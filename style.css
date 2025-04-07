@@ -121,21 +121,25 @@
     line-height: 32px; 
     max-width: 788px;
 }
+.game-content {
+    margin: 32px;
+    margin-top: 36px;
+}
 .game-card__number {
     color: rgb(32, 32, 39);
     font-size: 16px;
     font-weight: 500;
     line-height: 110%;
     text-align: left;  
+    display: inline-block;
 }
 .game-card__text {
     color: rgb(32, 32, 39);
-    font-family: Montserrat;
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
-    letter-spacing: 0px;
     text-align: left;
+    display: inline-block;
 }
 
 .game-cards {
@@ -169,33 +173,32 @@
 }
 
 .game-card__image_type_1 {
-    background: url(img/cart1.svg);
+    background: url(img/game_1.png);
     background-position: center;
     
 }
 .game-card__image_type_2 {
-    background: url(img/cart2.svg);
+    background: url(img/game_2.png);
     background-position: center;
 
 }
 .game-card__image_type_3{
-    background: url(img/cart3.svg);
+    background: url(img/game_3.png);
     background-position: center;
 
 }
 .game-card__image_type_4{
-    background: url(img/cart4.svg);
-    background-image: url(img/cart4_1.svg);
+    background: url(img/game_4.png);
     background-position: center;
 
 }
 .game-card__image_type_5{
-    background: url(img/cart5.svg);
+    background: url(img/game_5.png);
     background-position: center;
 
 }
 .game-card__image_type_6{
-    background: url(img/cart6.svg);
+    background: url(img/game_6.png);
     background-position: center;
 
 }
