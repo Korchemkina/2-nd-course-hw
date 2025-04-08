@@ -96,7 +96,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
     align-self: stretch;
     background: #202027;
     background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
@@ -120,6 +119,8 @@
     font-weight: 400;
     line-height: 32px; 
     max-width: 788px;
+    padding-bottom: 72px;
+    padding-top: 24px;
 }
 .game-content {
     margin: 32px;
@@ -150,7 +151,9 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 32px;
     align-items: start;
+    margin-bottom: 96px;
 }
+
 
 .game-card {
     display: flex;
@@ -159,7 +162,9 @@
     background-color: #FFFFFF ;
     border-radius: 30px;
 }
-
+.game-card:hover {
+    transform: scale(1.1);
+}
 .game-card__image {
     border-radius: 30px;
     height: 314px;
