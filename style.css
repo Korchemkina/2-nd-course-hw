@@ -83,7 +83,6 @@
     max-height: 87px;
 }
 .scrollbar__text {
-    font-family: "Montserrat";
     color: rgb(32, 32, 39);
     font-size: 30px;
     font-weight: 700;
@@ -101,9 +100,9 @@
     background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
     background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
     background-repeat: no-repeat;
-    padding-left: 120px;
+    padding-left: 119px;
+    padding-right: 120px;
 }
-
 
 .games {
     color: #FFF;
@@ -145,7 +144,7 @@
 
 .game-cards {
     max-height: 1060px;
-    max-width: 1200px;
+    max-width: 1201px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
