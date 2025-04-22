@@ -52,16 +52,14 @@
     border-radius: 60px;
     background: rgb(32, 32, 39);
     color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 16px 28px;
     width: 247px;
     height: 66px;
     font-size: 24px;
     font-weight: 600;
     display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 .header__button:hover {
     background: rgb(225, 255, 143);
@@ -123,7 +121,7 @@
 }
 .game-content {
     margin: 32px;
-    margin-top: 36px;
+    margin-bottom: 36px;
 }
 .game-card__number {
     color: rgb(32, 32, 39);
