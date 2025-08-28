@@ -6,8 +6,8 @@
     font-family: "Montserrat", sans-serif;
   }
   .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px); 
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px); 
   }
   
 .header {
@@ -142,8 +142,6 @@
 }
 
 .game-cards {
-    max-height: 1060px;
-    max-width: 1201px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -176,33 +174,27 @@
 }
 
 .game-card__image_type_1 {
-    background: url(img/game_1.png);
-    background-position: center;
+    background-image: url(img/game_1.png);
     
 }
 .game-card__image_type_2 {
-    background: url(img/game_2.png);
-    background-position: center;
+    background-image: url(img/game_2.png);
     
 }
 .game-card__image_type_3{
-    background: url(img/game_3.png);
-    background-position: center;
+    background-image: url(img/game_3.png);
     
 }
 .game-card__image_type_4{
-    background: url(img/game_4.png);
-    background-position: center;
+    background-image: url(img/game_4.png);
     
 }
 .game-card__image_type_5{
-    background: url(img/game_5.png);
-    background-position: center;
+    background-image: url(img/game_5.png);
     
 }
 .game-card__image_type_6{
-    background: url(img/game_6.png);
-    background-position: center;
+    background-image: url(img/game_6.png);
     
 }
 
