@@ -37,7 +37,7 @@ alert(num);
 let age = Number(prompt("Сколько Вам лет?"));
 alert(`Возраст Пользователя ${age} годикоф`);
 
-const User = {
+const user = {
    name: 'Шурик',
    age: 21,
    isAdmin: true
