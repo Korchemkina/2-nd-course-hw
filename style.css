@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -165,7 +169,7 @@ a {
   grid-template-rows: repeat(2, 1fr);
   gap: 32px;
   align-items: start;
-  margin-bottom: 96px;
+  padding-bottom: 50px;
 }
 
 .game-card {
@@ -230,7 +234,7 @@ a {
   font-size: 64px;
   font-weight: 700;
   padding-top: 46px;
-  padding-bottom: 72px;
+  padding-bottom: 40px;
 }
 
 .minigame-block {
@@ -290,12 +294,11 @@ a {
   text-align: center;
 }
 
-.minigame__button:hover {
+.minigame-button:hover {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
-  border-radius: 60px;
 }
 
 .right-side {
@@ -316,6 +319,18 @@ a {
 
 .right-minig3 {
   background-image: url(img/minig3.png);
+}
+
+.right-minig4 {
+  background-image: url(img/minig4.png);
+}
+
+.right-minig5 {
+  background-image: url(img/minig5.png);
+}
+
+.right-minig6 {
+  background-image: url(img/minig6.png);
 }
 
 .footer {

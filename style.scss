@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: "Montserrat", sans-serif;
   }
@@ -25,7 +28,6 @@
 .header__container {
     max-width: 768px;
     padding-top: 196px;
-
 }
 .header__heading {
     color: rgb(32, 32, 39);
@@ -152,7 +154,7 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 32px;
     align-items: start;
-    margin-bottom: 96px;
+    padding-bottom: 50px;
 }
 
 .game-card {
@@ -220,8 +222,7 @@
     font-size: 64px;
     font-weight: 700;
     padding-top: 46px;
-    padding-bottom: 72px;
-
+    padding-bottom: 40px;
 }
 .minigame-block {
     display: flex;
@@ -256,8 +257,6 @@
     text-align: left; 
     padding-top: 24px;
     padding-bottom: 36px; 
-    
-    
 }
 .minigame-button {
     cursor: pointer;
@@ -276,12 +275,11 @@
     text-decoration: none;
     text-align: center;
 }  
-.minigame__button:hover {
+.minigame-button:hover {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);  
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 60px;
 }
 .right-side {
     flex-shrink: 0;
@@ -293,13 +291,20 @@
 .right-minig1 {
     background-image: url(img/minig1.png);
 }
-
 .right-minig2 {
     background-image: url(img/minig2.png);
 }
-
 .right-minig3 {
     background-image: url(img/minig3.png);
+}
+.right-minig4 {
+    background-image: url(img/minig4.png);
+}
+.right-minig5 {
+    background-image: url(img/minig5.png);
+}
+.right-minig6 {
+    background-image: url(img/minig6.png);
 }
 
 .footer {
