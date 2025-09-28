@@ -17,12 +17,16 @@
   }
   
 .header {
-    background: rgb(225, 255, 143);
-    height: 800px;   
-    background-image: url(img/heder-star/Star2.svg), url(img/heder-star/Star3.svg), url(img/heder-star/starbig.svg), url(img/heder-star/Star5.svg), url(img/heder-star/Star4.svg);
-    background-position: calc(100% - 1312px) 88px, calc(100% - 1258px) 50px, calc(100% + 480px) -400px,  calc(100% - 346px) 540px, calc(100% - 436px) 495px;
+    background: 
+        url("img/heder-star/Star2.svg") calc(100% - 1320px) 94px no-repeat,
+        url("img/heder-star/Star3.svg") calc(100% - 1249px) 69px no-repeat, 
+        url("img/heder-star/starbig.svg") calc(100% + 480px) -333px no-repeat, 
+        url("img/heder-star/Star5.svg") calc(100% - 455px) 538px no-repeat, 
+        url("img/heder-star/Star4.svg") calc(100% - 344px) 568px no-repeat,
+        rgba(225, 255, 143, 1);
     overflow: hidden;
-    background-repeat: no-repeat;
+    height: 710px;   
+
    
 }
 .header__container {
@@ -82,7 +86,6 @@
 .scrollbar {
     display: flex;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
     gap: 51px;
     flex-shrink: 0;
@@ -101,11 +104,12 @@
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-    background: #202027;
-    background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
-    background-position: calc(100% + 77px) 143px, calc(100% - 1380px) 770px, calc(100% - 1340px) 822px;
+    background: 
+        url("img/Star1.svg") calc(100% + 77px) 143px no-repeat,
+        url("img/Star11.svg") calc(100% - 1381px) 770px no-repeat,
+        url("img/Star12.svg") calc(100% - 1340px) 822px no-repeat,
+        #202027;
     overflow: hidden;
-    background-repeat: no-repeat;
 }
 
 .games {
@@ -128,8 +132,8 @@
 .game-content {
     display: flex;
     flex-direction: column;
-    margin: 32px;
-    margin-bottom: 36px;
+    padding: 32px;
+    padding-bottom: 36px;
 }
 .game-card__number {
     color: rgb(32, 32, 39);
@@ -138,6 +142,7 @@
     line-height: 110%;
     text-align: left;  
     display: inline-block;
+    padding: 8px 16px 10px;
 }
 .game-card__text {
     color: rgb(32, 32, 39);
@@ -146,6 +151,7 @@
     line-height: 39px;
     text-align: left;
     display: inline-block;
+    padding-top: 16px;
 }
 
 .game-cards {
@@ -163,6 +169,7 @@
     grid-column: span 4;
     background-color: #FFFFFF ;
     border-radius: 30px;
+    width: 378px;
 }
 .game-card:hover {
     transform: scale(1.1);
@@ -246,7 +253,7 @@
     color: rgba(32, 32, 39, 1);
     font-size: 48px;
     font-weight: 700;
-    line-height: 100%;
+    // line-height: 100%;
     text-align: left;
 }
 .minigame-text {
