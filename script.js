@@ -37,7 +37,7 @@ alert(num);
 let age = Number(prompt("Сколько Вам лет?"));
 alert(`Возраст Пользователя ${age} годикоф`);
 
-const User = {
+const user = {
    name: 'Шурик',
    age: 21,
    isAdmin: true
@@ -56,5 +56,3 @@ alert(`Полученное число разделили на 2 = ${div}`);
 dif = div - number;
 alert(`Из результата вычли первоначальное загаданное число = ${dif}`);
 alert(`Ну вот! А Вы сомнивались... Результат: ${dif}`);
-
-
