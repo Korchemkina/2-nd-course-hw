@@ -210,7 +210,8 @@
     background-image: url(img/game_6.png);
 }
 
-// МИНИ-ИГРЫ
+/* МИНИ-ИГРЫ*/
+
 .minigames {
     display: flex;
     flex-direction: column;
@@ -253,7 +254,7 @@
     color: rgba(32, 32, 39, 1);
     font-size: 48px;
     font-weight: 700;
-    // line-height: 100%;
+    /* line-height: 100%;*/
     text-align: left;
 }
 .minigame-text {
@@ -327,5 +328,6 @@ justify-content: center;
 padding-top: 61px;
 padding-bottom: 60px;
 }
+
 
 @import "mobile";
