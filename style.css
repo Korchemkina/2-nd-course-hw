@@ -351,23 +351,28 @@ a {
     padding-right: 16px;
   }
   .header {
+    background: url("img/heder-star/MobStar2.svg") calc(100% - 304px) 97px no-repeat, url("img/heder-star/MobStar3.svg") calc(100% - 264px) 64px no-repeat, url("img/heder-star/MobVector.svg") calc(100% + 114px) -103px no-repeat, url("img/heder-star/MobStar5.svg") calc(100% - 86px) 557px no-repeat, url("img/heder-star/MobStar4.svg") calc(100% - 34px) 580px no-repeat, rgb(225, 255, 143);
+    overflow: hidden;
     height: 700px;
   }
   .header__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 375px;
+    height: 371px;
+    padding-top: 147px;
   }
   .header__heading {
     font-size: 40px;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0px;
     text-align: center;
   }
   .header__text {
     font-size: 16px;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 120%;
     padding-top: 24px;
     padding-bottom: 36px;
     text-align: center;
@@ -380,6 +385,12 @@ a {
   }
   .games-container {
     display: none;
+  }
+  .minigame-name {
+    font-size: 32px;
+  }
+  .minigame-text {
+    font-size: 16px;
   }
   .footer {
     font-size: 16px;
