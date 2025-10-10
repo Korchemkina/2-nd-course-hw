@@ -2,6 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html {
@@ -22,7 +23,7 @@ a {
 }
 
 .header {
-  background: url("img/heder-star/Star2.svg") calc(100% - 1320px) 94px no-repeat, url("img/heder-star/Star3.svg") calc(100% - 1249px) 69px no-repeat, url("img/heder-star/starbig.svg") calc(100% + 480px) -333px no-repeat, url("img/heder-star/Star5.svg") calc(100% - 455px) 538px no-repeat, url("img/heder-star/Star4.svg") calc(100% - 344px) 568px no-repeat, rgb(225, 255, 143);
+  background: url("img/heder-star/Star2.svg") top 94px left 4vw no-repeat, url("img/heder-star/Star3.svg") top 69px left 10vw no-repeat, url("img/heder-star/starbig.svg") calc(100% + 480px) -333px no-repeat, url("img/heder-star/Star5.svg") calc(100% - 455px) 538px no-repeat, url("img/heder-star/Star4.svg") calc(100% - 344px) 568px no-repeat, rgb(225, 255, 143);
   overflow: hidden;
   height: 710px;
 }
@@ -99,7 +100,6 @@ a {
   color: rgb(32, 32, 39);
   font-size: 30px;
   font-weight: 700;
-  text-transform: uppercase;
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -281,9 +281,7 @@ a {
   border-radius: 60px;
   background: rgb(32, 32, 39);
   color: rgb(255, 255, 255);
-  padding: 16px 28px;
-  width: 247px;
-  height: 66px;
+  padding: 16px 75px;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -353,7 +351,7 @@ a {
   .header {
     background: url("img/heder-star/MobStar2.svg") calc(100% - 304px) 97px no-repeat, url("img/heder-star/MobStar3.svg") calc(100% - 264px) 64px no-repeat, url("img/heder-star/MobVector.svg") calc(100% + 114px) -103px no-repeat, url("img/heder-star/MobStar5.svg") calc(100% - 86px) 557px no-repeat, url("img/heder-star/MobStar4.svg") calc(100% - 34px) 580px no-repeat, rgb(225, 255, 143);
     overflow: hidden;
-    height: 700px;
+    height: 649px;
   }
   .header__container {
     display: flex;
@@ -364,15 +362,16 @@ a {
     padding-top: 147px;
   }
   .header__heading {
+    width: 262px;
     font-size: 40px;
-    line-height: 120%;
+    line-height: 123%;
     letter-spacing: 0px;
     text-align: center;
   }
   .header__text {
+    width: 296px;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 120%;
+    line-height: 123%;
     padding-top: 24px;
     padding-bottom: 36px;
     text-align: center;
@@ -383,16 +382,76 @@ a {
     width: 285px;
     height: 55px;
   }
+  .scrol {
+    padding: 16px 24px;
+  }
+  .scrollbar {
+    gap: 27px;
+  }
+  .scrollbar__text {
+    font-size: 16px;
+  }
+  .scrollbar__star {
+    width: 19px;
+    height: 19px;
+  }
   .games-container {
     display: none;
+  }
+  .minigames {
+    padding: 0px 16px 10px 16px;
+    gap: 25px;
+    background-image: none;
+  }
+  .minigames__title {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    padding-top: 53px;
+    padding-bottom: 28px;
+  }
+  .minigame-block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .left-side {
+    padding-top: 29px;
+    padding-right: 29px;
+    padding-left: 29px;
+    padding-bottom: 32px;
   }
   .minigame-name {
     font-size: 32px;
   }
   .minigame-text {
     font-size: 16px;
+    line-height: 125%;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+  .minigame-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 16px 110px;
+  }
+  .right-minig1,
+  .right-minig2,
+  .right-minig3,
+  .right-minig4,
+  .right-minig5,
+  .right-minig6 {
+    min-height: 285px;
+    border-radius: 30px;
+    width: 100%;
+    background-size: 100%;
+  }
+  .minigame-text_mob {
+    width: 240px;
   }
   .footer {
     font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
