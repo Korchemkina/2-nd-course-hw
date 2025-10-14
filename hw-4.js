@@ -77,5 +77,6 @@ const randomNumber = [];
         randomNumber.push(Math.floor(Math.random() * 1001));
     }    
     let min = Math.min(...randomNumber);
-        console.log(randomNumber, min);    
+        console.log(randomNumber, min); 
+           
     
