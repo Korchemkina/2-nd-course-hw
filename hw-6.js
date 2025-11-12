@@ -38,8 +38,9 @@ console.log(arrn5);
 console.log('\n%c Задание 6','color:green'); 
 const arr6 = [9, 8, 7, 'a', 6, 5];
     arr6.sort();
+    const filterArr6 = arr6.filter(item => typeof item === 'number');
 
-console.log(arr6);
+console.log(filterArr6);
 
 console.log('\n%c Задание 7-Угадай число','color:green'); 
 const arr7 = [9, 8, 7, 6, 5];
@@ -96,23 +97,11 @@ function negativNumbers(array) {
 console.log(negativNumbers([1, 2, 3, -4, 5, -6, 7, 8, 9, 10]));
 
 console.log('\n%c Задание 14','color:green'); 
-function randomNumber() {
-    return Math.floor(Math.random() * 10);
-}
-const arr14 = [];
-    for (let i = 0; i < 10; i++) {
-        arr14.push(randomNumber());
-    }
-console.log(arr14);
+let randomArr = Array.from({length: 10}, () => Math.floor(Math.random() * 10 + 1));
+console.log(randomArr);
+let honestArr = randomArr.filter(num => num % 2 === 0);
+console.log(honestArr);
 
-const evenArr = [];
-    for (let i = 0; i < arr14.length; i++) {
-        if (arr14[i] % 2 === 0) {
-            evenArr.push(arr14[i]);
-        }
-    }
-
-    console.log(evenArr);
 
 console.log('\n%c Задание 15','color:green'); 
 function randomNumber() {

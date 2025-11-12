@@ -35,47 +35,33 @@ const guessTheNumber = () => {
 const simpleArithmetic = () => {
     alert('Простая арифметика');
 
-    // случайная задача
-    function generateRandomTask() {
-        const operators = ['+', '-', '*', '/'];
-        const num1 = Math.floor(Math.random() * 20); // Случайное число от 0 до 20
-        const num2 = Math.floor(Math.random() * 20); // Случайное число от 0 до 20
-        const operator = operators[Math.floor(Math.random() * operators.length)];
+    const operators = ['+', '-', '*', '/'];
 
-    // чтобы избежать деления на ноль
-    if (operator === '/') {
-        return num2 === 0 ? `${num1} / 1` : `${num1} / ${num2}`;
-    }
+    while (true) {
+        let randomArr = Array.from({length: 2}, () => Math.floor(Math.random() * 20 + 1));
+        let operator = operators[Math.floor(Math.random() * operators.length)];
 
-    return `${num1} ${operator} ${num2}`;
-    }
+        if (operator === '/' && randomArr[1] === 0) randomArr[1] = 1;
 
-    function calculateResult(task) {
-        const [num1, operator, num2] = task.split(" ");
-        switch (operator) {
-            case '+':
-                return parseFloat(num1) + parseFloat(num2);
-            case '-':
-                return parseFloat(num1) - parseFloat(num2);
-            case '*':
-                return parseFloat(num1) * parseFloat(num2);
-            case '/':
-                return parseFloat(num1) / parseFloat(num2);
-        }
-    }
+        let correctAnswer = eval(`${randomArr[0]} ${operator} ${randomArr[1]}`);
 
-    const task = generateRandomTask();
-    const userAnswer = prompt(`Решите задачу: ${task}`);
+        if (operator === '/') correctAnswer = +correctAnswer.toFixed(2);
 
-    // Проверка ответа
-    const correctAnswer = calculateResult(task);
-        if (parseFloat(userAnswer) === correctAnswer) {
-            alert("Правильно!");
-        } else {
-            alert(`Неправильно. Правильный ответ: ${correctAnswer}`);
+        let input = prompt(`Решите задачу ${randomArr[0]} ${operator} ${randomArr[1]}`);
+
+        if (input === null) break;
+
+        let userAnswer = Number(input);
+        if (isNaN(userAnswer)) {
+            alert ('Введите корректное число');
+            continue;
         }
 
-    if (confirm('Играем ещё раз?')) {
-        simpleArithmetic();
+        userAnswer === correctAnswer
+        ? alert ('Ответ правильный')
+        : alert (`Ошибка! Правильный ответ: ${correctAnswer}`);
+
+        if (!confirm('Сыграть ещё раз?')) break;
+
     }
 }
