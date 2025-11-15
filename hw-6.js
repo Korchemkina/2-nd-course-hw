@@ -105,11 +105,7 @@ console.log(honestArr);
 
 console.log('\n%c Задание 15','color:green'); 
 function randomNumber() {
-<<<<<<< HEAD
     return Math.floor(Math.random() * 10 + 1);
-=======
-    return Math.floor(Math.random() * 10);
->>>>>>> 4d46f279388dddda6af0995d2f5209eff1215ed1
 }
 const arr15 = [];
     for (let i = 0; i < 10; i++) {
