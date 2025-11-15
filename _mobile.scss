@@ -4,22 +4,34 @@
     padding-right: 16px;
 }
 .header {
-    height: 700px;
+    background: 
+        url("img/heder-star/MobStar2.svg") calc(100% - 304px) 97px no-repeat,
+        url("img/heder-star/MobStar3.svg") calc(100% - 264px) 64px no-repeat, 
+        url("img/heder-star/MobVector.svg") calc(100% + 114px) -103px no-repeat, 
+        url("img/heder-star/MobStar5.svg") calc(100% - 86px) 557px no-repeat, 
+        url("img/heder-star/MobStar4.svg") calc(100% - 34px) 580px no-repeat,
+        rgba(225, 255, 143, 1);
+    overflow: hidden;
+    height: 649px;
     &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 375px;
+    height: 371px;
+    padding-top: 147px;
     }
     &__heading {
+    width: 262px;
     font-size: 40px;
-    line-height: 100%;
+    line-height: 123%;
     letter-spacing: 0px;
     text-align: center;
     }   
     &__text {
+    width: 296px;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 100%;
+    line-height: 123%;
     padding-top: 24px;
     padding-bottom: 36px;
     text-align: center;
@@ -32,12 +44,81 @@
     }
 }
 
+.scrol {
+    padding: 16px 24px;
+}
+.scrollbar {
+    gap: 27px;
+
+    &__text {
+    font-size: 16px;
+    }
+    &__star {
+    width: 19px;
+    height: 19px;
+    }
+}
+
 .games-container {
     display: none;
 }
+// МИНИ-ИГРЫ
+.minigames {
+    padding: 0px 16px 10px 16px;
+    gap: 25px;
+    background-image: none;
+    
+    &__title {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    padding-top: 53px;
+    padding-bottom: 28px;
+    }
+}
+.minigame-block {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.left-side {
+    padding-top: 29px;
+    padding-right: 29px;
+    padding-left: 29px;
+    padding-bottom: 32px;
+}
+.minigame-name {
+    font-size: 32px;
+}
+.minigame-text {
+    font-size: 16px;
+    line-height: 125%;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+.minigame-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 16px 110px;
 
+}
+.right-minig1, 
+.right-minig2,
+.right-minig3,
+.right-minig4,
+.right-minig5,
+.right-minig6 {
+    min-height: 285px;
+    border-radius: 30px;
+    width: 100%;
+    background-size: 100%;
+}
+.minigame-text_mob {
+    width: 240px;
+}
 .footer {
     font-size: 16px;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 }

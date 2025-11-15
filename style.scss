@@ -1,33 +1,32 @@
 * {
     margin: 0px;
     padding: 0px;
-  }
-  html {
+    box-sizing: border-box;
+}
+html {
     scroll-behavior: smooth;
-  }
-  body {
+}
+body {
     font-family: "Montserrat", sans-serif;
-  }
-  a {
+}
+a {
     text-decoration: none;
-  }
-  .center {
+}
+.center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px); 
-  }
-  
+}
+
 .header {
     background: 
-        url("img/heder-star/Star2.svg") calc(100% - 1320px) 94px no-repeat,
-        url("img/heder-star/Star3.svg") calc(100% - 1249px) 69px no-repeat, 
+        url("img/heder-star/Star2.svg") top 94px left 4vw no-repeat,
+        url("img/heder-star/Star3.svg") top 69px left 10vw no-repeat, 
         url("img/heder-star/starbig.svg") calc(100% + 480px) -333px no-repeat, 
         url("img/heder-star/Star5.svg") calc(100% - 455px) 538px no-repeat, 
         url("img/heder-star/Star4.svg") calc(100% - 344px) 568px no-repeat,
         rgba(225, 255, 143, 1);
     overflow: hidden;
     height: 710px;   
-
-   
 }
 .header__container {
     max-width: 768px;
@@ -94,7 +93,6 @@
     color: rgb(32, 32, 39);
     font-size: 30px;
     font-weight: 700;
-    text-transform: uppercase;
     white-space: nowrap;
     text-transform: uppercase;
 }
@@ -210,7 +208,8 @@
     background-image: url(img/game_6.png);
 }
 
-// МИНИ-ИГРЫ
+/* МИНИ-ИГРЫ*/
+
 .minigames {
     display: flex;
     flex-direction: column;
@@ -253,7 +252,7 @@
     color: rgba(32, 32, 39, 1);
     font-size: 48px;
     font-weight: 700;
-    // line-height: 100%;
+    /* line-height: 100%;*/
     text-align: left;
 }
 .minigame-text {
@@ -272,9 +271,7 @@
     border-radius: 60px;
     background: rgb(32, 32, 39);
     color: rgb(255, 255, 255);
-    padding: 16px 28px;
-    width: 247px;
-    height: 66px;
+    padding: 16px 75px;
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
@@ -327,5 +324,6 @@ justify-content: center;
 padding-top: 61px;
 padding-bottom: 60px;
 }
+
 
 @import "mobile";

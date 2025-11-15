@@ -13,7 +13,7 @@
   <body>
     <section class="header center">
       <div class="header__container">
-        <h1 class="header__heading">Добро пожаловать <br> на мой сайт мини-игр</h1>
+        <h1 class="header__heading">Добро пожаловать на мой сайт мини-игр</h1>
         <p class="header__text">
           Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
           <span class="header__text-bold">«Поехали!»</span> и
@@ -171,7 +171,7 @@
         <div class="left-side">
           <h3 class="minigame-name">Угадай число</h3> 
           <p class="minigame-text">Попробуй угадать случайное<br>число от 1 до 100.</p>
-          <a href="#game1" class="minigame-button">Играть!</a>
+          <a href="#game1" class="minigame-button" onclick="guessTheNumber()">Играть!</a>
         </div>
         <div class="right-side right-minig1"></div>
       </div>
@@ -180,7 +180,7 @@
         <div class="left-side">
           <h3 class="minigame-name">Простая арифметика</h3>
           <p class="minigame-text">Попробуй решить простые арифметические задачи.</p>
-          <a href="#game1" class="minigame-button">Играть!</a>
+          <a href="#game2" class="minigame-button" onclick="simpleArithmetic()">Играть!</a>
         </div>
         <div class="right-side right-minig2"></div>
       </div>
@@ -216,7 +216,7 @@
       <div class="minigame-block reversed" id="randomColorGenerator"> <!--№6-->
         <div class="left-side">
           <h3 class="minigame-name">Генератор <br>случайных <br>цветов</h3>
-          <p class="minigame-text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+          <p class="minigame-text minigame-text_mob">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
           <a href="#game1" class="minigame-button">Играть!</a>
         </div>
         <div class="right-side right-minig6"></div>
@@ -228,5 +228,10 @@
       <footer class="footer center">Все права защищены.</footer>
   <!-- <script src="script.js"></script> -->
   <!-- <script src="hw-3.js"></script> -->
-    </body>
+  <!-- <script src="hw-4.js"></script> -->
+<script src="games.js"></script>
+<!-- <script src="hw-5.js"></script> -->
+<script src="hw-6.js"></script>
+
+</body>
 </html>
