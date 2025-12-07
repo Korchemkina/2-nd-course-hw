@@ -64,4 +64,61 @@ const simpleArithmetic = () => {
         if (!confirm('Сыграть ещё раз?')) break;
 
     }
+    
+}
+
+const flipTheText = () => {
+    alert('Переверни текст');
+    
+    const userInput = prompt('Введите текст для переворота:');
+        if (userInput !== null) {
+        const reversedText = userInput.split('').reverse().join('');
+            alert('Перевернутый текст: ' + reversedText);
+        } else {
+            alert('Вы не ввели текст.');
+        }
+if (confirm('Играем ещё раз?')) {
+        flipTheText();
+    }
+}
+
+
+const quiz = () => {
+    alert('Простая викторина');
+
+const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+let score = 0;
+
+for (let i = 0; i < quiz.length; i++) {
+    const currentQuestion = quiz[i].question;
+    const answerOptions = quiz[i].options.join("\n");
+    
+    let userAnswer = prompt(`${currentQuestion}\n\nВарианты ответов:\n${answerOptions}\n\nВведите номер выбранного варианта.`, "");
+    userAnswer = parseInt(userAnswer.trim());
+        if (!isNaN(userAnswer) && userAnswer === quiz[i].correctAnswer){
+        score++;
+        }
+    }
+alert(`Вы ответили верно на ${score} из ${quiz.length} вопросов.`);
+
+// if (confirm('Играем ещё раз?')) {
+//         quiz();
+//     }
+
 }
