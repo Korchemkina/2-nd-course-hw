@@ -122,3 +122,43 @@ alert(`Вы ответили верно на ${score} из ${quiz.length} воп
 //     }
 
 }
+
+
+const rockPaperScissors = () => {
+    alert('Камень, ножницы, бумага');
+
+function playGame() {
+    const options = ["камень", "ножницы", "бумага"];
+    let playAgain = true;
+
+    while (playAgain) {
+        const userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+        const computerChoice = options[Math.floor(Math.random() * options.length)];
+
+        if (!options.includes(userChoice)) {
+        alert("Неверный выбор. Пожалуйста, выберите камень, ножницы или бумага.");
+            continue;
+        }
+
+    let result;
+
+    if (userChoice === computerChoice) {
+        result = "Ничья!";
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        result = "Вы победили!";
+    } else {
+        result = "Компьютер победил!";
+    }
+
+    alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\nРезультат: ${result}`);
+
+    playAgain = confirm("Сыграем ещё?");
+    }
+}
+
+playGame();
+}
