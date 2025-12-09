@@ -84,7 +84,6 @@ if (confirm('Играем ещё раз?')) {
 
 
 const quiz = () => {
-    alert('Простая викторина');
 
 const quiz = [
     {
@@ -103,24 +102,34 @@ const quiz = [
         correctAnswer: 2
     }
 ];
-let score = 0;
 
-for (let i = 0; i < quiz.length; i++) {
-    const currentQuestion = quiz[i].question;
-    const answerOptions = quiz[i].options.join("\n");
-    
-    let userAnswer = prompt(`${currentQuestion}\n\nВарианты ответов:\n${answerOptions}\n\nВведите номер выбранного варианта.`, "");
-    userAnswer = parseInt(userAnswer.trim());
-        if (!isNaN(userAnswer) && userAnswer === quiz[i].correctAnswer){
-        score++;
+do {
+    alert('Простая викторина');
+    let score = 0;
+    for (let q of quiz) {
+        let messege = `${q.question}\n${q.options.join('\n')}`;
+        let answer = prompt(messege);
+
+        if (answer === null) {
+            alert("Игра прервана!");
+            return;
+        }
+
+        let isNumberCorrect = Number(answer) === q.correctAnswer;
+        let isTextCorrect = answer.trim().toLowerCase() === q.options[q.correctAnswer - 1]
+            .replace(/^\d+\.\s*/, '')
+            .toLowerCase();
+
+        if (isNumberCorrect || isTextCorrect) {
+            alert ('Правильно');
+            score++;
+        } else {
+            alert (`Не правильно, правильный ответ: ${q.options[q.correctAnswer - 1]}`);
         }
     }
-alert(`Вы ответили верно на ${score} из ${quiz.length} вопросов.`);
 
-// if (confirm('Играем ещё раз?')) {
-//         quiz();
-//     }
-
+    alert(`Викторина завершена!\nПравильных ответов: ${score} из ${quiz.length}`);
+} while (confirm("Хотите сыграть ещё раз?") );
 }
 
 
@@ -132,9 +141,14 @@ function playGame() {
     let playAgain = true;
 
     while (playAgain) {
-        const userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+        const normalUserChoice = prompt("Выберите: камень, ножницы или бумага");
         const computerChoice = options[Math.floor(Math.random() * options.length)];
 
+        if (normalUserChoice === null) {
+            alert("Игра прервана!");
+            break;
+        }
+        let userChoice = normalUserChoice.toLowerCase();
         if (!options.includes(userChoice)) {
         alert("Неверный выбор. Пожалуйста, выберите камень, ножницы или бумага.");
             continue;
