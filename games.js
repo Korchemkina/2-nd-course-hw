@@ -177,3 +177,40 @@ function playGame() {
 playGame();
 }
 
+// Генерация случайного цвета
+function generateRandomColor() {
+    const randomNumber = Math.floor(Math.random() * 16777216);
+    return '#' + randomNumber.toString(16).padStart(6, '0');
+}
+
+// Главная функция для смены фона с дополнительным подтверждением
+function changeBackgroundColor() {
+    const shouldChange = confirm("Хотите изменить цвет фона на случайный?");
+    
+    if (shouldChange) {
+        const randomColor = generateRandomColor();
+
+    // Меняем фон страницы
+    document.body.style.backgroundColor = randomColor;
+
+    // Меняем фон всех необходимых элементов
+    const blocks = document.querySelectorAll('.header, .games-container, .minigames');
+    blocks.forEach(block => {
+        block.style.backgroundColor = randomColor;
+    });
+    } else {
+        alert("Вы вышли из игры.");
+        return; // Завершаем функцию досрочно
+        }
+}
+
+// Назначение обработчика события на кнопку
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector(".random-color-generator");
+        if (button) {
+        button.addEventListener("click", changeBackgroundColor);
+        } else {
+    console.error("Button not found!");
+    }
+});
+
