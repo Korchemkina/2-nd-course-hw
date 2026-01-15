@@ -1,0 +1,9 @@
+@media (min-width: 600px) and (max-width: 900px) {
+    .section {
+        flex: 1 1 48%;
+    }
+}
+.game-cards {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}

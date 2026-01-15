@@ -75,19 +75,20 @@ a {
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 0);
 }
+
 .scrol {
+    width: 100%;
     background: rgb(188, 236, 48);
     padding: 27px 0px;
     overflow: hidden;
-    display: flex;
-
+    white-space: nowrap;
+    position: relative;
 }
 .scrollbar {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    backdrop-filter: blur(50px);
     gap: 51px;
-    flex-shrink: 0;
+    animation: scroll-left 20s linear infinite;
 }
 .scrollbar__text {
     color: rgb(32, 32, 39);
@@ -96,6 +97,16 @@ a {
     white-space: nowrap;
     text-transform: uppercase;
 }
+.scrollbar__star {
+    width: 36px;
+    height: 36px;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
 
 .games-container {
     display: flex;
@@ -327,3 +338,4 @@ padding-bottom: 60px;
 
 
 @import "mobile";
+@import "tablet";

@@ -81,19 +81,19 @@ a {
 }
 
 .scrol {
+  width: 100%;
   background: rgb(188, 236, 48);
   padding: 27px 0px;
   overflow: hidden;
-  display: flex;
+  white-space: nowrap;
+  position: relative;
 }
 
 .scrollbar {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
   gap: 51px;
-  flex-shrink: 0;
+  animation: scroll-left 20s linear infinite;
 }
 
 .scrollbar__text {
@@ -104,6 +104,19 @@ a {
   text-transform: uppercase;
 }
 
+.scrollbar__star {
+  width: 36px;
+  height: 36px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .games-container {
   display: flex;
   flex-direction: column;
@@ -454,4 +467,13 @@ a {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .section {
+    flex: 1 1 48%;
+  }
+}
+.game-cards {
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }/*# sourceMappingURL=style.css.map */
